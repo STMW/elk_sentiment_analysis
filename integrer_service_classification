@@ -1,0 +1,2 @@
+#apres docker compost up -d
+curl -d '{"index_pattern": { "title" : "twitter" } }' -H "Content-Type: application/json" -k -XPOST  -H "kbn-xsrf: reporting" http://localhost:5601/api/index_patterns/index_pattern -u elastic:changeme
